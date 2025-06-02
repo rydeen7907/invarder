@@ -1822,7 +1822,7 @@ class Game:
                 pygame.mixer.music.stop()
             self.game_state = STATE_GAME_OVER
             self.game_over_timer = 0 # タイマーリセット
-            self.gameover_bgm_played = False # ゲームオーバーBGM再生フラグをリセット            if self.player.alive():
+            self.gameover_bgm_played = False # ゲームオーバーBGM再生フラグをリセット  
             if self.player and self.player.alive():
                 self._create_particles(self.player.rect.center, num_particles=30)
                 self.player.kill()
